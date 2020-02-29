@@ -1,32 +1,44 @@
 ---
 ---
 
-h1:before
+h1
 	counter-reset: h2_counter
 
-h2:before
+h2
 	counter-increment: h2_counter
-	content: counter(h2_counter) "."
 	counter-reset: h3_counter
 
-h3:before
+h3
 	counter-increment: h3_counter
-	content: counter(h2_counter) "." counter(h3_counter) "."
 	counter-reset: h4_counter
 
-h4:before
+h4
 	counter-increment: h4_counter
-	content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) "."
 	counter-reset: h5_counter
 
-h5:before
+h5
 	counter-increment: h5_counter
-	content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) "." counter(h5_counter) "."
 	counter-reset: h6_counter
 
-h6:before
+h6
 	counter-increment: h6_counter
-	content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) "." counter(h5_counter) "." counter(h6_counter) "."
+
+
+h2:before
+	content: counter(h2_counter) ". "
+
+h3:before
+	content: counter(h2_counter) "." counter(h3_counter) ". "
+
+h4:before
+	content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) ". "
+
+h5:before
+	content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) "." counter(h5_counter) ". "
+
+h6:before
+	content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) "." counter(h5_counter) "." counter(h6_counter) ". "
+
 
 ol:not(.simple)
 	list-style-type: none
@@ -38,4 +50,4 @@ ol:not(.simple) > li:before
 
 .toc ol > li:before
 	counter-increment: ol_counter
-	content: counters(ol_counter, ".") " "
+	content: counters(ol_counter, ".") ". "
