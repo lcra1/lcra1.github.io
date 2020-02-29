@@ -36,7 +36,7 @@ h2 :before
 	$section_prefix: $section_prefix counter(h6_counter) "."
 	content: $section_prefix " "
 
-ol
+ol :not(.simple)
 	list-style-type: none
 	counter-reset: ol_counter
 
