@@ -13,5 +13,3 @@ layout: default
   
   {% endfor %}
 </ul>
-		{% if headerLevel < minHeader or headerLevel > maxHeader %}
-			{% continue %}
