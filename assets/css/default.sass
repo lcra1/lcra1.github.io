@@ -12,27 +12,26 @@ h2:before
 	$section_prefix: $section_prefix counter(h2_counter) "."
 	content: $section_prefix " "
 
-h2:before
-	counter-increment: h2_counter
-	counter-reset: h3_counter
+h3:before
+	counter-increment: h3_counter
+	counter-reset: h4_counter
 	$section_prefix: $section_prefix counter(h3_counter) "."
 	content: $section_prefix " "
 
-h2:before
-	counter-increment: h2_counter
-	counter-reset: h3_counter
+h4:before
+	counter-increment: h4_counter
+	counter-reset: h5_counter
 	$section_prefix: $section_prefix counter(h4_counter) "."
 	content: $section_prefix " "
 
-h2:before
-	counter-increment: h2_counter
-	counter-reset: h3_counter
+h5:before
+	counter-increment: h5_counter
+	counter-reset: h6_counter
 	$section_prefix: $section_prefix counter(h5_counter) "."
 	content: $section_prefix " "
 
-h2:before
-	counter-increment: h2_counter
-	counter-reset: h3_counter
+h6:before
+	counter-increment: h6_counter
 	$section_prefix: $section_prefix counter(h6_counter) "."
 	content: $section_prefix " "
 
