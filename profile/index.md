@@ -1,2 +1,7 @@
-#	profile
-lcra1.github.io/profile
+---
+title: Profile
+description: My profile page
+---
+
+## Who is lcra1?
+idk.
