@@ -1,11 +1,11 @@
 ---
 ---
-/*
-	body
-		counter-reset: h1_counter
-*/
+
+//	body
+//		counter-reset: h1_counter
+
 	h1
-		//counter-increment: h1_counter
+//		counter-increment: h1_counter
 		counter-reset: h2_counter
 
 	h2
@@ -19,19 +19,19 @@
 	h4
 		counter-increment: h4_counter
 		counter-reset: h5_counter
-/*
-	h5
-		counter-increment: h5_counter
-		counter-reset: h6_counter
 
-	h6
-		counter-increment: h6_counter
-*/
+//	h5
+//		counter-increment: h5_counter
+//		counter-reset: h6_counter
 
-/*
-	h1:before
-		content: ""
-*/
+//	h6
+//		counter-increment: h6_counter
+
+
+
+//	h1:before
+//		content: ""
+
 	h2:before
 		content: counter(h2_counter) ". "
 
@@ -40,13 +40,13 @@
 
 	h4:before
 		content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) ". "
-/*
-	h5:before
-		content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) "." counter(h5_counter) ". "
 
-	h6:before
-		content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) "." counter(h5_counter) "." counter(h6_counter) ". "
-*/
+//	h5:before
+//		content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) "." counter(h5_counter) ". "
+
+//	h6:before
+//		content: counter(h2_counter) "." counter(h3_counter) "." counter(h4_counter) "." counter(h5_counter) "." counter(h6_counter) ". "
+
 
 ol:not(.simple)
 	list-style-type: none

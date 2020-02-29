@@ -1,3 +1,6 @@
 title: lcra1
 description: SE(になりたい人)がなんか書くサイト
 theme: jekyll-theme-hacker
+
+plugins:
+  - jekyll-sitemap
