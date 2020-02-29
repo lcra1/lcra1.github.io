@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: SE(になりたい人)がなんか書くサイト、のHome
+description: {{ sitedescription }}、のHome
 ---
 
 ##	概要
