@@ -8,8 +8,7 @@ layout: default
 <ul>
   {% for page in site.html_pages %}
   <li>
-    <a href="{{site.github.url}}{{ page.url }}">{{ page.url | remove: "/*.html" }}</a>
+    <a href="{{ site.github.url }}{{ page.url }}">{{ page.url.path }}</a>
   </li>
-  
   {% endfor %}
 </ul>
