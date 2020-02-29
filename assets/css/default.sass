@@ -40,7 +40,7 @@ ol :not(.simple)
 	list-style-type: none
 	counter-reset: ol_counter
 
-ol > li :not(ol .simple > li) :before
+ol :not(.simple) > li :before
 	counter-increment: ol_counter
 	content: counters(ol_counter, "-") " "
 
