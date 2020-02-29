@@ -1,39 +1,45 @@
 ---
 ---
 
-$section_prefix: ""
+$h1_prefix: ""
+$h2_prefix: ""
+$h3_prefix: ""
+$h4_prefix: ""
+$h5_prefix: ""
+$h6_prefix: ""
 
 h1:before
 	counter-reset: h2_counter
+	content: $h1_prefix
 
 h2:before
 	counter-increment: h2_counter
 	counter-reset: h3_counter
-	$section_prefix: $section_prefix counter(h2_counter) "."
-	content: $section_prefix " "
+	$h2_prefix: $h1_prefix counter(h2_counter) "."
+	content: $h2_prefix
 
 h3:before
 	counter-increment: h3_counter
 	counter-reset: h4_counter
-	$section_prefix: $section_prefix counter(h3_counter) "."
-	content: $section_prefix " "
+	$h3_prefix: $h2_prefix counter(h3_counter) "."
+	content: $h3_prefix
 
 h4:before
 	counter-increment: h4_counter
 	counter-reset: h5_counter
-	$section_prefix: $section_prefix counter(h4_counter) "."
-	content: $section_prefix " "
+	$h4_prefix: $h3_prefix counter(h4_counter) "."
+	content: $h4_prefix
 
 h5:before
 	counter-increment: h5_counter
 	counter-reset: h6_counter
-	$section_prefix: $section_prefix counter(h5_counter) "."
-	content: $section_prefix " "
+	$h5_prefix: $h4_prefix counter(h5_counter) "."
+	content: $h5_prefix
 
 h6:before
 	counter-increment: h6_counter
-	$section_prefix: $section_prefix counter(h6_counter) "."
-	content: $section_prefix " "
+	$h2_prefix: $h5_prefix counter(h6_counter) "."
+	co6tent: $h6_prefix
 
 ol:not(.simple)
 	list-style-type: none
