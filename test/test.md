@@ -1,7 +1,4 @@
 ---
-layout: default
-title: testpage
-description: this is test page
 ---
 
 ## pagelist
