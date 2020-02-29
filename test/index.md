@@ -5,7 +5,7 @@ layout: default
 ---
 
 ## pagelist
-{% capture pagelist%}{{ site.html_pages | sort }}{% endcapture%}
+{% assign pagelist = site.html_pages | sort %}
 {% for p in page.pagelist %}
-- [{{ p.title }}]({{ site.github.url }}{{ p.url }})
+- hoge
 {% endfor %}
