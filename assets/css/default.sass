@@ -35,7 +35,7 @@ h6:before
 	$section_prefix: $section_prefix counter(h6_counter) "."
 	content: $section_prefix " "
 
-ol:not(.simple), ol:not(.toc)
+ol:not(.simple)
 	list-style-type: none
 	counter-reset: ol_counter
 
@@ -43,6 +43,6 @@ ol:not(.simple) > li:before
 	counter-increment: ol_counter
 	content: counters(ol_counter, "-") " "
 
-ol .toc > li:before
+.toc ol > li:before
 	counter-increment: ol_counter
 	content: counters(ol_counter, ".") " "

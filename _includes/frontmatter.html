@@ -1,5 +1,5 @@
 <section id="frontmatter">
 	<h1>{{ page.title }}</h1>
 	{{ page.description }}
-	{% include toc.html html=content class=toc ordered=true %}
+	<span class="toc">{% include toc.html html=content class=toc ordered=true %}</span>
 </section>
