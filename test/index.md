@@ -4,8 +4,7 @@ description: this is test page
 layout: default
 pagelist:
 {% for p in site.html_pages %}
-  -
-    url: {{ p.url }}
+  - url: {{ p.url }}
     title: {{ p.title }}
 {% endfor %}
 ---
