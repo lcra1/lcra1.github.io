@@ -1,6 +1,6 @@
 ---
 title: Home
-description: {{ sitedescription }}、のHome
+description: {{ site.description }}、のHome
 layout: default
 ---
 
