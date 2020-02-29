@@ -1,7 +1,7 @@
 ---
-title: lcra1.github.io
 layout: default
-description: github pages test
+title: Home
+description: SE(になりたい人)がなんか書くサイト、のHome
 ---
 
 ##	概要
