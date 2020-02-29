@@ -40,10 +40,10 @@ ol
 	list-style-type: none
 	counter-reset: ol_counter
 
-(ol :not(.toc)) > li :before
+ol > li :not(ol .simple > li) :before
 	counter-increment: ol_counter
 	content: counters(ol_counter, "-") " "
 
-(ol .toc) > li :before
+ol .simple > li :before
 	counter-increment: ol_counter
 	content: counters(ol_counter, ".") " "
