@@ -2,13 +2,16 @@
 title: testpage
 description: this is test page
 layout: default
+pagelist:
+{% for p in site.html_pages %}
+  -
+    url: {{ p.url }}
+    title: {{ p.title }}
+{% endfor %}
 ---
 
 ## pagelist
-<ul>
-  {% for page in site.html_pages %}
-  <li>
-    <a href="{{ site.github.url }}{{ page.url }}">{{ page.url | remove: "/*.html" }}</a>
-  </li>
-  {% endfor %}
-</ul>
+{% assign sorted_pagelist = pagelist | sort %}
+{% for p in page.sorted_pagelist %}
+{{ p.url | replace: "*/", "  " | remove: "*" }}- [{{ p.title }}]({{ site.github.url }}{{ p.url }})
+{% endfor %}
